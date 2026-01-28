@@ -15,7 +15,21 @@ body{
 }
 
 
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
 
+ul{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block; 
+    transition: 0.3s;     
+    color: inherit;        
+}
 /* شكل الاسكرول */
 
 /* 1. تحديد عرض السكرول بار */
@@ -42,3 +56,206 @@ body{
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(0, 71, 112);
 }
+
+
+
+
+/* Header Start */
+
+.header {
+    direction: rtl;
+  width: 100%; /* لازم تدي عرض كامل أو محدد */
+  max-width: 1400px;
+  height: 150px;
+  display: flex;
+  position: fixed;
+  top: 0; 
+  left: 50%; /* يحرك الهيدر لنص الشاشة */
+  transform: translateX(-50%); /* يرجعه لورا نص عرضه عشان يتوسطن بالظبط */
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+  color: black;
+  background-color: transparent;
+  z-index: 1000; 
+  /* backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);  */
+}
+
+.logo  img{
+    margin-top: 20px;
+    width: 115px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.logo img:hover{
+    transform: scale(1.1);
+}
+
+.humburger {
+  display: none;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    direction: rtl;
+    margin-top: 25px;
+  direction: rtl;
+
+}
+
+.navbar ul li a {
+  color: black;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: 700;
+  font-size: 23px;
+  padding: 10px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.navbar ul li a:hover{
+    background-color: #0681cd;
+    color: white;
+}
+
+/* Header End */
+
+
+
+/* Home Start */
+
+#home{
+    background: url("img/bac.jpg")center center/cover no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+#home .home-all {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
+    padding-right: 10%; 
+}
+
+
+.content-text h1{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 50px;
+    color: #333;
+}
+
+.content-text h1 span{
+    color: #0681cd;
+}
+.content-text p{
+    font-weight: 800;
+    font-size: 22px;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 1.6;
+    color: #2b2929;
+}
+.content-text {
+    max-width: 400px; 
+    text-align: right; 
+    direction: rtl;    
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Home End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media special Start navbar*/
+
+@media (max-width: 900px) {
+  .header {
+    padding: 0 3rem;
+    position: relative;
+  }
+
+  .humburger {
+    display: block;
+    cursor: pointer;
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
+    position: relative;
+  }
+
+  .humburger i {
+    position: absolute;
+    inset: 0;
+    /* left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0; */
+    margin: auto;
+    width: max-content;
+    height: max-content;
+    opacity: 0;
+    transition: 0.3s ease;
+  }
+
+  .humburger i.active {
+    opacity: 1;
+    transform: rotate(180deg);
+  }
+
+  .navbar {
+    position: absolute;
+    background-color: #333;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    padding: 0 3rem;
+    opacity: 0;
+    transition: 0.3s ease;
+  }
+
+  .navbar.active {
+    opacity: 1;
+  }
+
+  .navbar ul {
+    display: block;
+  }
+
+  .navbar ul li {
+    margin: 20px 0;
+    border-bottom: 1px solid #a4a4a4;
+    padding-bottom: 10px;
+  }
+
+  .navbar ul li:last-child {
+    border-bottom: none;
+  }
+
+  .navbar ul li a {
+    margin: 0;
+  }
+}
+
+
+
+/* media special End  navbar*/
