@@ -1,0 +1,45 @@
+/* libarary Font Size */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+
+/* Normaly */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body{
+    background-color: aliceblue;
+    height: 5000px;
+}
+
+
+
+/* شكل الاسكرول */
+
+/* 1. تحديد عرض السكرول بار */
+::-webkit-scrollbar {
+    width: 9px; 
+}
+
+/* 2. شكل الخلفية (المسار اللي بيمشي فيه السكرول) */
+::-webkit-scrollbar-track {
+    background: #0681cd; 
+    border-radius: 7px;
+}
+
+/* 3. شكل "المقبض" نفسه (الجزء اللي بيتحرك) */
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 81, 128); 
+    border-radius: 10px;
+    width: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 71, 112);
+}
