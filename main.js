@@ -10,10 +10,10 @@ humburgerMenu.addEventListener("click", () => {
 });
 
 // دي عشان تقفل  المنيو
-document.querySelectorAll(".navbar ul li a").forEach(link => {
-    link.addEventListener("click", () => {
-        navbar.classList.remove("active");
-        bars.classList.add("active");     
-        xmark.classList.remove("active");  
-    });
+document.querySelectorAll(".navbar ul li a").forEach((link) => {
+  link.addEventListener("click", () => {
+    navbar.classList.remove("active");
+    bars.classList.add("active");
+    xmark.classList.remove("active");
+  });
 });

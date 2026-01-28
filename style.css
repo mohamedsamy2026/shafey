@@ -10,9 +10,6 @@
     font-family: "Open Sans", sans-serif;
 }
 
-body{
-    background-color: aliceblue;
-}
 
 
 .container{
@@ -110,10 +107,10 @@ a {
 }
 
 .navbar ul li a {
-  color: black;
+  color: rgb(4, 78, 139);
   text-decoration: none;
   margin: 0 20px;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 23px;
   padding: 10px;
   border-radius: 20px;
@@ -146,11 +143,29 @@ a {
 }
 
 
+
+
+
+.content-text {
+    max-width: 500px; 
+    margin: auto; 
+    direction: rtl;    
+    padding: 20px;
+    border-radius: 10px;
+   
+    margin-right: 55%;
+
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center; 
+}
+
 .content-text h1{
-    text-align: center;
-    margin-bottom: 15px;
-    font-size: 50px;
-    color: #333;
+  color: #2b2929;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 18px;
 }
 
 .content-text h1 span{
@@ -158,18 +173,28 @@ a {
 }
 .content-text p{
     font-weight: 800;
-    font-size: 22px;
+    font-size: 25px;
     margin-top: 10px;
     text-align: center;
     line-height: 1.6;
     color: #2b2929;
+    margin-bottom: 30px;
 }
-.content-text {
-    max-width: 400px; 
-    text-align: right; 
-    direction: rtl;    
-    padding: 20px;
-    border-radius: 10px;
+
+
+
+.content-text a {
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    background-color: #0681cd;
+    padding: 15px 30px; 
+    border-radius: 40px;
+    transition: all 0.3s ease;
+}
+
+.content-text a:hover{
+  background-color: #026aab;
 }
 
 /* Home End */
@@ -255,6 +280,9 @@ a {
     margin: 0;
   }
 }
+
+
+
 
 
 
