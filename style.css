@@ -8,6 +8,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
+    scroll-behavior: smooth;
 }
 
 
@@ -63,7 +64,7 @@ a {
     direction: rtl;
   width: 100%; /* لازم تدي عرض كامل أو محدد */
   max-width: 1400px;
-  height: 150px;
+  height: 120px;
   display: flex;
   position: fixed;
   top: 0; 
@@ -75,13 +76,13 @@ a {
   color: black;
   background-color: transparent;
   z-index: 1000; 
-  /* backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);  */
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px); 
 }
 
 .logo  img{
-    margin-top: 20px;
-    width: 115px;
+    margin-top: 15px;
+    width: 100px;
     border-radius: 50%;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -101,7 +102,7 @@ a {
   justify-content: center;
   align-items: center;
     direction: rtl;
-    margin-top: 25px;
+    margin-top: 15px;
   direction: rtl;
 
 }
@@ -129,7 +130,7 @@ a {
 /* Home Start */
 
 #home{
-    background: url("img/bac.jpg")center center/cover no-repeat;
+    background: url("img/gg.png")center center/cover no-repeat;
     height: 100vh;
     width: 100%;
 }
@@ -139,7 +140,6 @@ a {
     justify-content: center; 
     align-items: center;
     height: 100vh;
-    padding-right: 10%; 
 }
 
 
@@ -153,7 +153,7 @@ a {
     padding: 20px;
     border-radius: 10px;
    
-    margin-right: 55%;
+    margin-right: 60%;
 
     display: flex;
     flex-direction: column; 
@@ -199,7 +199,83 @@ a {
 
 /* Home End */
 
+/* features Start */
 
+#features{
+  padding: 4rem 0;
+background-color: #c6f1fc;
+}
+
+#features .title{
+  padding-bottom: 5rem;
+  color: rgb(2, 62, 102); 
+  text-align: center;
+}
+
+#features .title h2{
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+#features .title h2 span{
+  color: #0479a4;
+}
+
+#features .title p{
+  font-weight: 600;
+  color: rgb(4, 110, 192);
+  font-size: 22px;
+  max-width: 170px;
+  margin: auto;
+}
+
+#features .title i {
+    vertical-align: middle; /* يخلي الأيقونة في نص السطر بالظبط */
+    font-size: 22px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+#features .items{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 40px;
+}
+
+#features .items .item{
+  background-color: #0681cd;
+  text-align: center;
+  padding: 25px 30px 40px;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-bottom:6px solid #5ec8f1;
+
+}
+
+#features .items .item:hover{
+  transform: translateY(-10px);
+
+}
+
+#features .items .item i{
+  font-size: 50px;
+  margin-bottom: 17px;
+}
+
+#features .items .item h2{
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+#features .items .item p{
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 1.5;
+
+}
+/* features End */
 
 
 
