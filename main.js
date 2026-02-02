@@ -1,3 +1,5 @@
+// بتاع الناف بار يبدأ
+
 const navbar = document.querySelector(".navbar");
 const bars = document.querySelector(".fa-bars");
 const xmark = document.querySelector(".fa-xmark");
@@ -17,3 +19,5 @@ document.querySelectorAll(".navbar ul li a").forEach((link) => {
     xmark.classList.remove("active");
   });
 });
+
+// بتاع الناف بار ينتهي
