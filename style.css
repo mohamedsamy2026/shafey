@@ -130,7 +130,7 @@ a {
 /* Home Start */
 
 #home{
-    background: url("img/gg.png")center center/cover no-repeat;
+    background: url("img/gg.jpg")center center/cover no-repeat;
     height: 100vh;
     width: 100%;
 }
@@ -240,6 +240,8 @@ background-color: #44d6fa;
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
   gap: 40px;
+  margin: 0 1rem;
+
 }
 
 #features .items .item{
@@ -280,6 +282,108 @@ background-color: #44d6fa;
 
 
 /* Models Start */
+#prducts {
+  padding: 6rem 0;
+  background-color: #f0f6fb; /* خلفية فاتحة هادية تبرز الكاردات */
+}
+
+#prducts .title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#prducts .title h2 {
+  font-size: 50px; /* صغرناه شوية عشان التناسق */
+  color: #01356d; /* لون كحلي وقور */
+  font-weight: 800;
+}
+
+#prducts .title p {
+  color: #292828; /* لون رمادي هادي للوصف */
+  font-size: 21px;
+  max-width: 300px;
+  font-weight: 600;
+  margin: 15px auto 0;
+}
+
+#prducts .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+  gap: 25px;
+}
+
+#prducts .cards .card {
+  border-radius: 15px;
+  background-color: #ffffff;
+  border: 1px solid #eee; /* برواز خفيف جداً */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05); /* ظل ناعم بدل البرواز التقيل */
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    height: 100%; /* بتخلي الكاردات كلها طول واحد في الصف الواحد */
+    overflow: hidden; /* دي اللي هتقص الزوايا الحادة وتخلي الدوران يبان */
+
+  
+}
+
+#prducts .cards .card:hover {
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  border:4px  #ffc107 solid; /* نفس لون النجوم والسعر */
+  transform: translateY(-10px);}
+
+#prducts .cards .card img {
+  width: 100%;
+  padding: 20px; /* مساحة للتنفس حول المنتج */
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+#prducts .cards .card .details {
+  background-color: #01356d; /* لون كحلي فخم مالي العرض */
+  color: white;
+  width: 100%;
+  padding: 25px;
+  text-align: right;
+  /* شلنا البرواز الأبيض اللي كان جوه عشان الشياكة */
+
+
+    /* السحر هنا */
+  flex-grow: 1; /* بتجبر الجزء الكحلي إنه يتمدد ويملا أي فراغ متبقي تحت */
+  display: flex;
+  flex-direction: column;
+}
+
+#prducts .cards .card .details h3 {
+  font-size: 25px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+#prducts .cards .card .details .stars {
+  color: #ffc107; /* ذهبي للنجوم */
+  margin-bottom: 12px;
+}
+
+#prducts .cards .card .details .price {
+  color: #ffc107; /* السعر بالذهبي عشان يبرز */
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#prducts .cards .card .details .description {
+  font-size: 19px; /* الوصف أصغر شوية */
+  color: #ffffff; /* رمادي فاتح عشان ميزاحمش العنوان */
+  line-height: 1.5;
+  font-weight: 500;
+    margin-bottom: auto; /* بتزق أي حاجة تحتها (زي السعر لو رتبته كدة) لآخر الكارد */
+
+}
+
+
+
+
 
 
 
