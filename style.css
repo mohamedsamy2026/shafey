@@ -61,15 +61,12 @@ a {
 /* Header Start */
 
 .header {
-    direction: rtl;
+  direction: rtl;
   width: 100%; /* لازم تدي عرض كامل أو محدد */
-  max-width: 1400px;
-  height: 120px;
+  height: 130px;
   display: flex;
   position: fixed;
   top: 0; 
-  left: 50%; /* يحرك الهيدر لنص الشاشة */
-  transform: translateX(-50%); /* يرجعه لورا نص عرضه عشان يتوسطن بالظبط */
   justify-content: space-between;
   align-items: center;
   padding: 0 5rem;
@@ -95,6 +92,8 @@ a {
 .humburger {
   display: none;
 }
+
+
 
 .navbar ul {
   list-style: none;
@@ -133,6 +132,7 @@ a {
     background: url("img/gg.jpg")center center/cover no-repeat;
     height: 100vh;
     width: 100%;
+    
 }
 
 #home .home-all {
@@ -388,7 +388,12 @@ background-color: #44d6fa;
 #offers{
   padding: 6rem 0;
   background-color: hsl(192, 89%, 86%);
+  background: url("img/bg.jpg") center center/cover;
+  background: url("img/time-set-in.png") center center/cover;
+  background: url("img/time-in-ramdan.jpg") center center/cover;
 }
+
+
 
 #offers .title{
   margin-bottom: 3rem;
@@ -400,17 +405,17 @@ background-color: #44d6fa;
     font-size: 22px;
     margin-bottom: 15px;
     cursor: pointer;
-    color: rgb(0, 62, 139);
+    color: rgb(255, 255, 255);
 }
 
 #offers .title h2{
-  color: rgb(0, 62, 139);
+  color: rgb(255, 255, 255);
   font-size: 50px;
   margin-bottom: 15px;
 }
 
 #offers .title p{
-    color: rgb(22, 107, 227);
+    color: rgb(214, 240, 120);
     max-width: 300px;
     margin: auto;
     font-size: 20px;
@@ -425,15 +430,17 @@ background-color: #44d6fa;
 
 #offers .items-offer .item{
   cursor: pointer;
-  background-color: rgb(255, 255, 255);
-    padding: 25px 40px;
-    text-align: center;
-    border-radius: 15px;
-    position: relative;
-    transition: all 0.3s ease;
-    border: 5px solid #026aab;
-
+  background-color: #ffffff;
+  padding: 25px 40px;
+  text-align: center;
+  border-radius: 15px;
+  position: relative;
+  transition: all 0.3s ease;
+  border: 5px solid rgba(255, 193, 7, 0.2); 
+  
 }
+
+
 
 #offers .items-offer .item img{
   width: 100%;
@@ -468,12 +475,13 @@ background-color: #44d6fa;
     color: white;
     font-weight: 600;
     font-size: 15px;
-    background-color: #ff9f43; 
+    background-color: #e98324; 
     clip-path: polygon(100% 0, 82% 51%, 100% 100%, 0% 100%, 0 50%, 0% 0%);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
 }
 
 #offers .items-offer .item a{
-  background-color:#0681cd;
+  background-color: #01356d;
   padding: 15px 25px;
   border-radius: 28px;
   color: white;
@@ -481,10 +489,12 @@ background-color: #44d6fa;
   font-weight: 600;
   transition: all 0.3s ease;
   margin-top: 14px;
+  letter-spacing: 1px;
 }
 
+
 #offers .items-offer .item a:hover{
-   background-color: #01356d;
+   background-color: #026aab;
 }
 
 /* offers End  */
@@ -501,6 +511,8 @@ background-color: #44d6fa;
   .header {
     padding: 0 3rem;
     position: relative;
+        position: fixed;
+
   }
 
   .humburger {
@@ -523,6 +535,11 @@ background-color: #44d6fa;
     width: max-content;
     height: max-content;
     opacity: 0;
+    color: white;
+    background-color: #01356d;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 10px;
     transition: 0.3s ease;
   }
 
@@ -533,8 +550,8 @@ background-color: #44d6fa;
 
   .navbar {
     position: absolute;
-    background-color: #333;
-    top: 80px;
+    background-color: #ffffff;
+    top: 130px;
     left: 0;
     width: 100%;
     padding: 0 3rem;
