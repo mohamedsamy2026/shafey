@@ -21,3 +21,9 @@ document.querySelectorAll(".navbar ul li a").forEach((link) => {
 });
 
 // بتاع الناف بار ينتهي
+
+
+
+
+
+
