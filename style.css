@@ -845,7 +845,7 @@ background-color: #44d6fa;
 
 @media(max-width:500px){
   #home .content-text{
-    margin-top: 18rem;
+    margin-top: 10rem;
   }
 
   #home .content-text h1{
