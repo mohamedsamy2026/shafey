@@ -311,19 +311,21 @@ background-color: #44d6fa;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
   gap: 25px;
+  justify-content: center;
+  justify-items: center;
 }
 
 #prducts .cards .card {
   border-radius: 15px;
   background-color: #ffffff;
-  border: 1px solid #eee; /* برواز خفيف جداً */
-  box-shadow: 0 10px 20px rgba(0,0,0,0.05); /* ظل ناعم بدل البرواز التقيل */
+  border: 1px solid #eee;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
   cursor: pointer;
   display: flex;
   flex-direction: column;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    height: 100%; /* بتخلي الكاردات كلها طول واحد في الصف الواحد */
-    overflow: hidden; /* دي اللي هتقص الزوايا الحادة وتخلي الدوران يبان */
+    height: 100%; 
+    overflow: hidden; 
     width: 300px;
     height: 700px;
 
@@ -332,27 +334,24 @@ background-color: #44d6fa;
 
 #prducts .cards .card:hover {
   box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-  border:4px  #ffc107 solid; /* نفس لون النجوم والسعر */
+  border:4px  #ffc107 solid; 
   transform: translateY(-10px);}
 
 #prducts .cards .card img {
   width: 100%;
-  padding: 20px; /* مساحة للتنفس حول المنتج */
+  padding: 20px; 
   box-sizing: border-box;
   background-color: #fff;
 }
 
 #prducts .cards .card .details {
-  background-color: #01356d; /* لون كحلي فخم مالي العرض */
+  background-color: #01356d; 
   color: white;
   width: 100%;
   padding: 25px;
   text-align: right;
-  /* شلنا البرواز الأبيض اللي كان جوه عشان الشياكة */
 
-
-    /* السحر هنا */
-  flex-grow: 1; /* بتجبر الجزء الكحلي إنه يتمدد ويملا أي فراغ متبقي تحت */
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
 }
@@ -682,8 +681,7 @@ background-color: #44d6fa;
 @media (max-width: 1200px) {
   .header {
     padding: 0 3rem;
-    position: relative;
-        position: fixed;
+    position: fixed;
 
   }
 
@@ -730,10 +728,16 @@ background-color: #44d6fa;
     padding: 0 3rem;
     opacity: 0;
     transition: 0.3s ease;
+
+    visibility: hidden;    /* يخليها مخفية تماماً عن المتصفح */
+    pointer-events: none;
   }
 
   .navbar.active {
     opacity: 1;
+    visibility: visible;   /* ترجع تتحس */
+    pointer-events: auto;  /* ترجع تستقبل دوسات */
+    top: 130px;            /* حركة انسيابية بسيطة لو حبيت */
   }
 
   .navbar ul {
@@ -843,5 +847,10 @@ background-color: #44d6fa;
       margin: 0 1.2rem;
     }
 }
+
+/* @media(max-width:500px){
+  #home .content-text{
+  }
+} */
 
 /* media End */
