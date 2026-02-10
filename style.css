@@ -666,6 +666,19 @@ background-color: #44d6fa;
 .footer-top .row .col{
   margin-bottom:4rem;
 }
+
+.footer-bootom{
+  background-color: #026aab;
+  width: 100%;
+}
+
+.footer-bootom p{
+  text-align:center;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 14px;
+}
 /* Footer End */
 
 
