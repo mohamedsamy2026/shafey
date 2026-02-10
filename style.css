@@ -283,9 +283,10 @@ background-color: #44d6fa;
 
 
 /* Models Start */
+
 #prducts {
   padding: 6rem 0;
-  background-color: #f0f6fb; /* خلفية فاتحة هادية تبرز الكاردات */
+  background-color: #cbe6fa;
 }
 
 #prducts .title {
@@ -294,13 +295,13 @@ background-color: #44d6fa;
 }
 
 #prducts .title h2 {
-  font-size: 50px; /* صغرناه شوية عشان التناسق */
-  color: #01356d; /* لون كحلي وقور */
+  font-size: 50px;
+  color: #01356d;
   font-weight: 800;
 }
 
 #prducts .title p {
-  color: #292828; /* لون رمادي هادي للوصف */
+  color: #292828;
   font-size: 21px;
   max-width: 300px;
   font-weight: 600;
@@ -312,33 +313,32 @@ background-color: #44d6fa;
   grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
   gap: 25px;
   justify-content: center;
-  justify-items: center;
+  margin: 0 1rem;
 }
 
 #prducts .cards .card {
   border-radius: 15px;
   background-color: #ffffff;
-  border: 1px solid #eee;
+  border: 4px solid transparent;
   box-shadow: 0 10px 20px rgba(0,0,0,0.05);
   cursor: pointer;
   display: flex;
   flex-direction: column;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    height: 100%; 
-    overflow: hidden; 
-    width: 300px;
-    height: 700px;
-
-  
+  overflow: hidden; 
+  height: 100%; 
 }
 
 #prducts .cards .card:hover {
   box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-  border:4px  #ffc107 solid; 
-  transform: translateY(-10px);}
+  border: 4px #ffc107 solid; 
+  transform: translateY(-10px);
+}
 
 #prducts .cards .card img {
   width: 100%;
+  height: 350px; 
+  object-fit: contain; 
   padding: 20px; 
   box-sizing: border-box;
   background-color: #fff;
@@ -350,8 +350,7 @@ background-color: #44d6fa;
   width: 100%;
   padding: 25px;
   text-align: right;
-
-  flex-grow: 1;
+  flex: 1;
   display: flex;
   flex-direction: column;
 }
@@ -363,26 +362,25 @@ background-color: #44d6fa;
 }
 
 #prducts .cards .card .details .stars {
-  color: #ffc107; /* ذهبي للنجوم */
+  color: #ffc107;
   margin-bottom: 12px;
 }
 
 #prducts .cards .card .details .price {
-  color: #ffc107; /* السعر بالذهبي عشان يبرز */
+  color: #ffc107;
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 10px;
+  margin-top: auto; /* بيزق السعر لتحت خالص في الديتيلز لو الكلام قليل */
 }
 
 #prducts .cards .card .details .description {
-  font-size: 19px; /* الوصف أصغر شوية */
-  color: #ffffff; /* رمادي فاتح عشان ميزاحمش العنوان */
+  font-size: 19px;
+  color: #ffffff;
   line-height: 1.5;
   font-weight: 500;
-    margin-bottom: auto; /* بتزق أي حاجة تحتها (زي السعر لو رتبته كدة) لآخر الكارد */
-
+  margin-bottom: 15px;
 }
-
 /* Models End */
 
 
@@ -839,18 +837,28 @@ background-color: #44d6fa;
       color: white;
     }
 
-    #prducts .cards{
-      margin: 0 1.2rem;
-    }
 
     #offers .items-offer{
       margin: 0 1.2rem;
     }
 }
 
-/* @media(max-width:500px){
+@media(max-width:500px){
   #home .content-text{
+    margin-top: 18rem;
   }
-} */
+
+  #home .content-text h1{
+    font-size: 50px;
+  }
+
+  #home .content-text p{
+    font-size: 20px;
+    max-width:400px;
+    line-height: 1.8;
+    margin:5rem auto 2rem;
+    
+  }
+}
 
 /* media End */
